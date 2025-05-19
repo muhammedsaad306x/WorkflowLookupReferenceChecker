@@ -1,0 +1,12 @@
+﻿{
+  "assemblyName": "WorkflowLookupReferenceChecker.dll",
+  "pluginType": "WorkFlowArgumentsChecker.MyPluginControl",
+  "friendlyName": "Workflow Lookup Reference Checker",
+  "description": "Analyze workflows to identify entity reference lookups, check existence across environments, and generate FetchXML for missing records.",
+  "smallImageBase64": "",
+  "bigImageBase64": "",
+  "author": "Mohamed Saad",
+  "website": "https://github.com/yourname/WorkflowLookupReferenceChecker",
+  "email": "muhammedsaad306@gmail.com",
+  "version": "1.0.0"
+}
