@@ -36,6 +36,7 @@ namespace WorkFlowArgumentsChecker
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -57,7 +58,6 @@ namespace WorkFlowArgumentsChecker
             this.tabPageGrid = new System.Windows.Forms.TabPage();
             this.tabPageDebug = new System.Windows.Forms.TabPage();
             this.richTextBox_debugBox = new System.Windows.Forms.RichTextBox();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.topPanel.SuspendLayout();
@@ -82,14 +82,14 @@ namespace WorkFlowArgumentsChecker
             this.toolStripButton4});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1469, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(1469, 31);
             this.toolStrip1.TabIndex = 0;
             // 
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(111, 24);
+            this.toolStripButton1.Size = new System.Drawing.Size(111, 28);
             this.toolStripButton1.Text = "Load Solutions";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -97,7 +97,7 @@ namespace WorkFlowArgumentsChecker
             // 
             this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(105, 24);
+            this.toolStripButton2.Size = new System.Drawing.Size(105, 28);
             this.toolStripButton2.Text = "Load Lookups";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click_1);
             // 
@@ -107,9 +107,19 @@ namespace WorkFlowArgumentsChecker
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(138, 24);
+            this.toolStripButton3.Size = new System.Drawing.Size(138, 28);
             this.toolStripButton3.Text = "Generate FetchXml";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButtonGenerateFetch_Click);
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(113, 28);
+            this.toolStripButton4.Text = "Check In Target";
+            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButtonCheckTarget_Click);
             // 
             // comboBox1
             // 
@@ -161,7 +171,7 @@ namespace WorkFlowArgumentsChecker
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1090, 752);
+            this.dataGridView1.Size = new System.Drawing.Size(1090, 748);
             this.dataGridView1.TabIndex = 0;
             // 
             // topPanel
@@ -173,7 +183,7 @@ namespace WorkFlowArgumentsChecker
             this.topPanel.Controls.Add(this.label1);
             this.topPanel.Controls.Add(this.comboBox1);
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topPanel.Location = new System.Drawing.Point(0, 27);
+            this.topPanel.Location = new System.Drawing.Point(0, 31);
             this.topPanel.Name = "topPanel";
             this.topPanel.Padding = new System.Windows.Forms.Padding(10);
             this.topPanel.Size = new System.Drawing.Size(1469, 126);
@@ -252,7 +262,7 @@ namespace WorkFlowArgumentsChecker
             this.label3.ForeColor = System.Drawing.Color.Green;
             this.label3.Location = new System.Drawing.Point(119, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 19);
+            this.label3.Size = new System.Drawing.Size(44, 15);
             this.label3.TabIndex = 6;
             this.label3.Text = "source";
             // 
@@ -301,7 +311,7 @@ namespace WorkFlowArgumentsChecker
             // splitContainerMain
             // 
             this.splitContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerMain.Location = new System.Drawing.Point(0, 153);
+            this.splitContainerMain.Location = new System.Drawing.Point(0, 157);
             this.splitContainerMain.Name = "splitContainerMain";
             // 
             // splitContainerMain.Panel1
@@ -311,7 +321,7 @@ namespace WorkFlowArgumentsChecker
             // splitContainerMain.Panel2
             // 
             this.splitContainerMain.Panel2.Controls.Add(this.tabControlRight);
-            this.splitContainerMain.Size = new System.Drawing.Size(1469, 787);
+            this.splitContainerMain.Size = new System.Drawing.Size(1469, 783);
             this.splitContainerMain.SplitterDistance = 361;
             this.splitContainerMain.TabIndex = 0;
             // 
@@ -320,7 +330,7 @@ namespace WorkFlowArgumentsChecker
             this.checkedListBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.checkedListBox1.Location = new System.Drawing.Point(0, 0);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(361, 787);
+            this.checkedListBox1.Size = new System.Drawing.Size(361, 783);
             this.checkedListBox1.TabIndex = 0;
             // 
             // tabControlRight
@@ -331,7 +341,7 @@ namespace WorkFlowArgumentsChecker
             this.tabControlRight.Location = new System.Drawing.Point(0, 0);
             this.tabControlRight.Name = "tabControlRight";
             this.tabControlRight.SelectedIndex = 0;
-            this.tabControlRight.Size = new System.Drawing.Size(1104, 787);
+            this.tabControlRight.Size = new System.Drawing.Size(1104, 783);
             this.tabControlRight.TabIndex = 0;
             // 
             // tabPageGrid
@@ -340,7 +350,7 @@ namespace WorkFlowArgumentsChecker
             this.tabPageGrid.Location = new System.Drawing.Point(4, 25);
             this.tabPageGrid.Name = "tabPageGrid";
             this.tabPageGrid.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGrid.Size = new System.Drawing.Size(1096, 758);
+            this.tabPageGrid.Size = new System.Drawing.Size(1096, 754);
             this.tabPageGrid.TabIndex = 0;
             this.tabPageGrid.Text = "Entity References";
             this.tabPageGrid.UseVisualStyleBackColor = true;
@@ -351,7 +361,7 @@ namespace WorkFlowArgumentsChecker
             this.tabPageDebug.Location = new System.Drawing.Point(4, 25);
             this.tabPageDebug.Name = "tabPageDebug";
             this.tabPageDebug.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDebug.Size = new System.Drawing.Size(1096, 758);
+            this.tabPageDebug.Size = new System.Drawing.Size(1096, 754);
             this.tabPageDebug.TabIndex = 1;
             this.tabPageDebug.Text = "Result";
             this.tabPageDebug.UseVisualStyleBackColor = true;
@@ -363,20 +373,10 @@ namespace WorkFlowArgumentsChecker
             this.richTextBox_debugBox.Location = new System.Drawing.Point(3, 3);
             this.richTextBox_debugBox.Name = "richTextBox_debugBox";
             this.richTextBox_debugBox.ReadOnly = true;
-            this.richTextBox_debugBox.Size = new System.Drawing.Size(1090, 752);
+            this.richTextBox_debugBox.Size = new System.Drawing.Size(1090, 748);
             this.richTextBox_debugBox.TabIndex = 0;
             this.richTextBox_debugBox.Text = "";
             this.richTextBox_debugBox.WordWrap = false;
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(113, 24);
-            this.toolStripButton4.Text = "Check In Target";
-            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButtonCheckTarget_Click);
             // 
             // MyPluginControl
             // 
